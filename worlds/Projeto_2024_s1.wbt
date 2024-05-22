@@ -1,0 +1,88 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 5.6532678059317334e-06 5.653283792035166e-06 4.109574013821324
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.25 0.25
+}
+E-puck {
+  hidden position_0_0 17.98556674983626
+  hidden position_0_1 34.93801256450761
+  hidden rotation_1 0 1 0 5.419196135477086
+  hidden rotation_2 0 -0.9999999999999999 0 2.7610992785699096
+  translation 0.446751 0.440856 -6.69191e-05
+  rotation -0.0007741871787487638 -0.0020028471198908844 0.9999976946161558 -0.3254069473585872
+  controller "caixa_leve_finder"
+}
+Robot {
+  translation 0 0 0  # Posição inicial do supervisor (ajuste conforme necessário)
+  name "Supervisor"
+  supervisor TRUE
+  controller "supervisor_code"
+
+}
+DEF BOX1 WoodenBox {
+  translation 0 0 0.04
+  size 0.08 0.08 0.08
+}
+DEF BOX2 WoodenBox {
+  translation -0.1 0.43 0.04
+  name "wooden box(1)"
+  size 0.08 0.08 0.08
+}
+DEF BOX3 WoodenBox {
+  translation -0.35 0.35 0.04
+  name "wooden box(2)"
+  size 0.08 0.08 0.08
+}
+DEF BOX4 WoodenBox {
+  translation -0.35 -0.35 0.039995033499229796
+  rotation 0.8542980687491379 0.1708596137498195 -0.4908989734362412 6.09175019621705e-17
+  name "wooden box(3)"
+  size 0.08 0.08 0.08
+  mass 0.01
+}
+DEF BOX5 WoodenBox {
+  translation -0.35 0 0.04
+  name "wooden box(4)"
+  size 0.08 0.08 0.08
+}
+DEF BOX6 WoodenBox {
+  translation 0 -0.35 0.04
+  name "wooden box(5)"
+  size 0.08 0.08 0.08
+}
+DEF BOX10 WoodenBox {
+  translation 0 0.35 0.04
+  name "wooden box(6)"
+  size 0.08 0.08 0.08
+}
+DEF BOX7 WoodenBox {
+  translation 0.35 -0.35 0.04
+  name "wooden box(7)"
+  size 0.08 0.08 0.08
+}
+DEF BOX8 WoodenBox {
+  translation 0.35 0.35 0.04
+  name "wooden box(8)"
+  size 0.08 0.08 0.08
+}
+DEF BOX9 WoodenBox {
+  translation 0.35 0 0.04
+  name "wooden box(9)"
+  size 0.08 0.08 0.08
+}
